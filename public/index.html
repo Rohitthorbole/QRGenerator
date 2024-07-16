@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="title"><b>QRGenerator</b></div>
+    </div>
+    <div class="extra">
+        <div class="info">Generate your own QR Easier and Faster</div>
+        <div class="subinfo">Paste the data and the get the required QR</div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="left">
+                <div class="icon">
+                    <div id="bg1"><img src="./media/url.svg" alt="" id="url-icon"></div>
+                    <div id="bg2"><img src="./media/call.svg" alt="" id="call-icon"></div>
+                    <div id="bg3"><img src="./media/wp.svg" alt="" id="wp-icon"></div>
+                    <div id="bg4"><img src="./media/email.svg" alt="" id="email-icon"></div>
+                </div>
+                <div class="input">
+                    <input type="text" id="url-input" placeholder="Enter text to encode">
+                </div>
+                <div class="submit">
+                    <button id="generate-btn">Generate</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div id="display">
+                    <!-- QR code will be displayed here -->
+                </div>
+                <div class="download">
+                    <button id="download">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
